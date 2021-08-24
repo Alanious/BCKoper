@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding 0;
+  font-family: "Poppins", sans-serif;
+
+
+
+}
+
+header {
+    height: 90px;
+    background-color:  #12232E;
+    padding: 10px 0;
+     overflow: hidden;
+     width: 100%;
+}
+
+
+#firstnav{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    background-color: none;
+    text-decoration: none;
+}
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color:rgb(255, 215, 0);
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+.dropdown .dropdown-menu{
+    background-color: #12232E;
+    width:100%;
+
+
+
+
+}
+#dmtekst{
+    font-size: 14px;
+    text-transform: uppercase;}
+
+
+#brand{
+    max-width: 17vh;
+	height: auto;
+
+}
+
+nav ul li a{
+    background: none;
+    display: block;
+    padding: 8px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    #firstnav{
+        font-size: 15px;
+  } /*1rem = 16px*/
+    #dmtekst{
+        float: left;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    #firstnav{
+        font-size: 20px; /*1rem = 16px*/
+  }
+    #dmtekst{
+        float: left;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #firstnav{
+        font-size: 25x; /*1rem = 16px*/
+  }
+    #dmtekst{
+        float: left;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #firstnav{font-size:18px;} /*1rem = 16px*/
+  }
+    #dmtekst{
+        float: left;
+  }
+}
+
+
+h1{
+    font-size: 2.2em;
+    text-align: center;
+    padding: 60px 40px 30px;
+    color: #3D4852;
+    line-height: 1.2;
+}
+/* ZAČETEK SKLOPA POSLANSTVO */
+.about-company-section{
+background-color:	#4DA8DA;
+background-size: cover;
+height:500px;
+}
+.about-company-section h2:after{
+content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+background-color:#12232E;
+}
+
+.row{
+margin-top: 140px;
+
+
+}
+.img-fluid{
+  object-fit: cover;
+
+
+}
+p{
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+
+}
+/* KONEC SKLOPA POSLANSTVO */
+
+/* ZAČETEK SKLOPA VODSTVO */
+.team{
+background-color: #12232E;
+
+}
+#vodstvo{
+color:white;
+}
+#row2{
+margin-top: 100px;
+}
+.our-team{
+color: white;
+
+}
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+.profile {
+  flex-basis: 260px;
+}
+.profile .profile-img {
+  height: 250px;
+  width: 210px;
+  object-fit: cover; /*tu sem dodal object fit da ko zmanjsas stran se slika prilagodi*/
+  cursor: pointer;
+  border-radius: 50%
+}
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+.profile h4{
+font-size:18px;
+text-align:center;
+}
+.profile h5 {
+  font-size:14px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+  text-align:center;
+
+}
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+  .profiles {
+    margin: 20px 0;
+  }
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+  }
+/* KONEC SKLOPA VODSTVO */
+
+.contactus{
+background-color: #4DA8DA;
+background-size:overflow;
+position:absolute;
+width:100%;
+}
+.contactus h2:after{
+content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+background-color:#007CC7;
+
+}
+form .container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+
+}
+
+form .container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+
+	padding: 25px 40px;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: yellow;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+
+}

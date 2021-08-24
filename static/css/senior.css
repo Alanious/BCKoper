@@ -1,0 +1,390 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+header {
+    height: 90px;
+    background-color:  #12232E;
+    padding: 10px 0;
+     overflow: hidden;
+     width: 100%;
+
+}
+#firstnav{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    background-color: none;
+    text-decoration: none;
+}
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color:rgb(255, 215, 0);
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+.dropdown .dropdown-menu{
+    background-color: #12232E;
+    width:100%;
+
+
+
+
+}
+#dmtekst{
+    font-size: 14px;
+    text-transform: uppercase;}
+
+
+#brand{
+    max-width: 17vh;
+	height: auto;
+
+}
+
+nav ul li a{
+    background: none;
+    display: block;
+    padding: 8px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    #firstnav{
+        font-size: 15px;
+  } /*1rem = 16px*/
+    #dmtekst{
+        float: left;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    #firstnav{
+        font-size: 20px; /*1rem = 16px*/
+  }
+    #dmtekst{
+        float: left;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #firstnav{
+        font-size: 25x; /*1rem = 16px*/
+  }
+    #dmtekst{
+        float: left;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #firstnav{font-size:18px;} /*1rem = 16px*/
+  }
+    #dmtekst{
+        float: left;
+  }
+}
+
+.footer {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/static/img/court3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.first {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+
+.first h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .first h4::after {
+        content: '';
+        background: #FFD700;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+.first li {
+    list-style: none;
+    padding-bottom: 10px; /* change space between links*/
+}
+
+.first a, .first2 a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+    .first a:hover, .first2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+    }
+
+
+.second {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .second h4::after {
+        content: '';
+        background: #FFD700;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+
+.second li {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.second a, .second2 a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+    .second a:hover, .second2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+
+
+
+.third {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+
+}
+
+
+    .third h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+
+        .third h4::after {
+            content: '';
+            background: #FFD700;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 80%;
+        }
+
+
+
+    .third li {
+        list-style: none;
+        padding-bottom: 15px;
+        font-size: 14px;
+    }
+
+
+    .third li  {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    .first {
+        text-align: center;
+    }
+
+        .first h4::after {
+            left: 40%;
+        }
+}
+
+@media screen and (max-width:1000px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+.line {
+    height:2px;
+    background-color:rgb(206,206,206);
+    width:100%;
+}
+
+.container h1{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:100px;
+}

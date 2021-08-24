@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Basketball Team</title>
+
+    <!--LINK ZA MOBILNE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="/static/css/style_new.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+<body>
+<header>
+<div id="firstnav">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#12232E, #12232E);">
+  <div class="container-fluid">
+      <img id="brand" src="static/img/LogoKK.png" class="img-fluid" alt="logotip kluba">
+      <div class="topright" style="margin-top: 10px;">
+    <button class="navbar-toggler ms-auto mb-2 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="#"><i class="fa fa-folder" aria-hidden="true"></i>Novice</a>
+        </li>
+        <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Senior"><i class="fa fa-id-card" aria-hidden="true"></i>Člani</a>
+        </li>
+        <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Young"><i class="fa fa-users" aria-hidden="true"></i>Mladi</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-info-circle" aria-hidden="true"></i>O Klubu
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dmtekst">
+            <li><a class="dropdown-item text-white bg-transparent" href="/about">Poslanstvo</a></li>
+            <li><a class="dropdown-item text-white bg-transparent" href="/about">Vodstvo</a></li>
+            <li><a class="dropdown-item text-white bg-transparent" href="/about">Kontakt</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div id="slajd" class="slideshow-container">
+
+<div class="mySlides">
+  <p class="quotes">"DREAM AS IF YOU WILL LIVE FOREVER, LIVE AS
+        IF YOU'LL DIE TODAY."</p>
+  <p class="author">- Lebron James</p>
+</div>
+
+<div class="mySlides">
+  <p class="quotes">"TO SUCCEED YOU HAVE TO BELIEVE
+    IN SOMETHING WITH SUCH A PASSION THAT IT BECOMES A REALITY."</p>
+  <p class="author">- Luka Dončič</p>
+</div>
+
+<div class="mySlides">
+  <p class="quotes">"SOME PEOPLE WANT IT TO HAPPEN, SOME WISH IT WOULD HAPPEN,
+    AND OTHERS MAKE IT HAPPEN."</p>
+  <p class="author">- Michael Jordan</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</header>
+<footer>
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/img/pexels.jpeg" alt="Logotip/picture" style="width:300px;height:400px;">
+    </div>
+    <div class="flip-card-back">
+        <h2></h2>
+        <h3 style="color:#FFD700; margin-top: 75px;">OBLIKE SPONZORIRANJA</h3>
+        <p>Z veseljem se pogovorimo tudi o strateških božnostih sodelovanja.</p>
+        <a href="#">Preberi več</a>
+    </div>
+  </div>
+</div>
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/img/pexels1.jpeg" alt="Logotip/picture" style="width:300px;height:400px;">
+    </div>
+    <div class="flip-card-back">
+        <h2></h2>
+        <h3 style="color:#FFD700;">NADALJNI RAZVOJ</h3>
+        <p>"Mladi si zaslužijo najboljših možnih pogojev za razvoj tako pri izobrazbi,
+        kot tudi v športu. BC Koper bo v naslednjih letih postal najbolj napreden
+        razvojni center za mlade košarkarje."
+        <br>
+          <br>
+          - Luka Vončina
+        </p>
+        <a href="#">Preberi več</a>
+    </div>
+  </div>
+</div>
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/img/pexels-photo-5170498.jpeg" alt="Logotip/picture" style="width:300px;height:400px;">
+    </div>
+    <div class="flip-card-back">
+        <h2></h2>
+        <h3 style="color:#FFD700; margin-top: 70px;">IZOBRAZBA, KOŠARKA, USPEH</h3>
+        <p>V Kopru želimo v naslednjih 5 letih postaviti mednarodno prepoznavno
+        košarkarsko akademijo za mlade.</p>
+        <a href="#">Preberi več</a>
+    </div>
+  </div>
+</div>
+
+  <!-- STATIC CONTENT CARDS
+
+  <div class="conteinercard">
+    <div class="card" data-tilt>
+      <div class="contentcard">
+        <h2></h2>
+        <h3 style="color:#FFD700;">IZOBRAZBA, KOŠARKA, USPEH</h3>
+        <p>V Kopru želimo v naslednjih 5 letih postaviti mednarodno prepoznavno
+        košarkarsko akademijo za mlade.</p>
+        <a href="#">Preberi več</a>
+      </div>
+    </div>
+  </div>
+  <div class="conteinercard">
+    <div class="card" data-tilt>
+      <div class="contentcard">
+        <h2></h2>
+        <h3 style="color:#FFD700;">NADALJNI RAZVOJ</h3>
+        <p>"Mladi si zaslužijo najboljših možnih pogojev za razvoj tako pri izobrazbi,
+        kot tudi v športu. BC Koper bo v naslednjih letih postal najbolj napreden
+        razvojni center za mlade košarkarje."
+        <br>
+          <br>
+          Luka Vončina
+        </p>
+        <a href="#">Preberi več</a>
+      </div>
+    </div>
+  </div>
+  <div class="conteinercard">
+    <div class="card" data-tilt>
+      <div class="contentcard">
+        <h2></h2>
+        <h3 style="color:#FFD700;">OBLIKE SPONZORIRANJA</h3>
+        <p>Z veseljem se pogovorimo tudi o strateških božnostih sodelovanja.</p>
+        <a href="#">Preberi več</a>
+      </div>
+    </div>
+  </div>
+-->
+</footer>
+<!-- <div class="container">
+    <div id="end">
+
+    </div>
+    <div id="elements">
+        <div id="soc_med">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+    <div id="end_img">
+        <img src="/static/img/Logo_1.png">
+    </div>
+    <div id="team_sections">
+            <a href="#" class="teams">Članska ekipa</a>
+            <a href="#" class="teams">U 19</a>
+            <a href="#" class="teams">U 17</a>
+            <a href="#" class="teams">U 15</a>
+            <a href="#" class="teams">U 13</a>
+            <a href="#" class="teams">Košarkaška šola</a>
+            <hr class="style2">
+    </div>
+    </div>
+</div>
+-->
+
+
+<div class="footer" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/static/img/court3.jpeg); background-repeat: no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="first" style="text-align:left;">
+                        <h4> Selekcije</h4>
+
+                            <li><a href="/Senior">Članska ekipa</a></li>
+                            <li><a href="/Young">U-19</a></li>
+                            <li><a href="/Young">U-17</a></li>
+                            <li><a href="/Young">U-15</a></li>
+                            <li><a href="/Young">U-13</a></li>
+                            <li><a href="#">Košarkarska šola</a></li>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4>BASKETBALL CLUB KOPER</h4>
+                        <img class="logo_image" src="/static/img/Logo_2.png" alt="Logo_kluba_2" style="width: 120px; height: auto;">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4> Kontakt</h4>
+                        <ul>
+                            <li style="font-size: 14px;">Basketball Club Koper </li>
+                            <hr/>
+                            <li><i class="far fa-envelope"></i> info@bckoper.si</li>
+                            <li><i class="far fa-envelope"></i> bostjan.hrabar@bckoper.si</li>
+                            <li><i class="far fa-phone"></i> +386 41 523 076</li>
+                            <hr/>
+                            <li><i class="far fa-envelope"></i> luka.voncina@bckoper.si</li>
+                            <li><i class="far fa-phone"></i> +386 41 323 138</li>
+
+
+
+
+                          <li><i class="fas fa-map-marker-alt"></i> Koper </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+                    <div class="second2">
+                        <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram fa-2x margin"></i></a>
+                        <a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter fa-2x margin"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook fa-2x margin"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script>
+var slideIndex = 0;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  var myTimer;
+
+showSlides();
+
+function showSlides() {
+    var i;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    dots[slideIndex-1].className += " active";
+    slides[slideIndex-1].style.display = "block";
+    myTimer = setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+function currentSlide(no) {
+    var i;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slideIndex = no;
+    slides[no-1].style.display = "block";
+    dots[no-1].className += " active";
+    clearTimeout(myTimer);
+    myTimer = setTimeout(showSlides, 5000);
+}
+
+function plusSlides(n) {
+  var newslideIndex = slideIndex + n;
+  if(newslideIndex < 4 && newslideIndex > 0){
+     currentSlide(newslideIndex);
+  }
+}
+</script>
+</body>
+</html>
