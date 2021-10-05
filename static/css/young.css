@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 
+
 }
 header {
     height: 90px;
@@ -330,10 +331,16 @@ nav ul li a{
         }
 }
 
-.margin {
+/*.margin {
     margin-left: 20px;
 }
-
+*/
+.youngster{
+display:flex
+justify-content:center;
+align:items:center;
+margin:0;
+}
 .line {
     height:2px;
     background-color:rgb(206,206,206);
@@ -348,8 +355,11 @@ nav ul li a{
 
 /* Slideshow container */
 .slideshow-container {
-    position: relative;
+    display:grid
+    justify-content:center;
+    align-items:center;
     background: transparent;
+
 }
 
 /* Slides */

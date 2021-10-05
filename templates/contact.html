@@ -1,0 +1,111 @@
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+<div class="login">
+  <img src="/static/img/Logo_1.png">
+{% block content %}
+  <h2>VPISNI LIST</h2>
+
+
+  {% if success %}
+  <div class="success">
+    <p>Zahvaljujemo se vem za izkazano zaupanje. Kontaktirali vas bomo v kratkem.</p>
+  </div>
+
+  {% else %}  
+    {% for message in form.name.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    {% for message in form.birth.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    {% for message in form.school.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    {% for message in form.year.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    {% for message in form.names.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.email.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    {% for message in form.phone.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.subject.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.message.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    <form action="{{ url_for('contact') }}" method=post>
+      {{ form.hidden_tag() }}
+
+      <div class="labels">
+        <div id="name">
+      {{ form.name.label }}
+      {{ form.name(class_="test1") }}
+          </div>
+
+        <div id="birth">
+      {{ form.birth.label }}
+      {{ form.birth(class_="test1") }}
+          </div>
+
+      <div id="school">
+      {{ form.school.label }}
+      {{ form.school(class_="test1") }}
+          </div>
+
+      <div id="year">
+      {{ form.year.label }}
+      {{ form.year(class_="test1") }}
+          </div>
+
+      <div id="names">
+      {{ form.names.label }}
+      {{ form.names(class_="test1") }}
+          </div>
+
+        <div id="email">
+      {{ form.email.label }}
+      {{ form.email(class_="test1") }}
+        </div>
+
+        <div id="phone">
+      {{ form.phone.label }}
+      {{ form.phone(class_="test1") }}
+          </div>
+
+        <div id="subject">
+      {{ form.subject.label }}
+      {{ form.subject(class_="test1") }}
+          </div>
+
+        <div id="message">
+      {{ form.message.label(class_="text") }}
+      {{ form.message(class_="test") }}
+          </div>
+      <br>
+      </div>
+
+      {{ form.submit(class="button")}}
+
+    </form>
+  
+  {% endif %}
+{% endblock %}
+  </div>
+
+{% block styles %}
+<link rel="stylesheet" href="/static/css/contact.css">
+{% endblock %}

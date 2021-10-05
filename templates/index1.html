@@ -1,24 +1,27 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <title>Basketball Team</title>
 
     <!--LINK ZA MOBILNE-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="/static/css/style_new.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+
   </head>
 
 
 <body>
 <header>
 <div id="firstnav">
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#12232E, #12232E);">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="background-color: transparent !important;">
   <div class="container-fluid">
-      <img id="brand" src="static/img/LogoKK.png" class="img-fluid" alt="logotip kluba">
+      <img id="brand" src="static/img/Logo_2.png" class="img-fluid" alt="logotip kluba">
       <div class="topright" style="margin-top: 10px;">
     <button class="navbar-toggler ms-auto mb-2 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,13 +30,13 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="#"><i class="fa fa-folder" aria-hidden="true"></i>Novice</a>
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Young"><i class="fa fa-folder" aria-hidden="true"></i>Novice</a>
         </li>
         <li class="nav-item">
           <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Senior"><i class="fa fa-id-card" aria-hidden="true"></i>Člani</a>
         </li>
         <li class="nav-item">
-          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Young"><i class="fa fa-users" aria-hidden="true"></i>Mladi</a>
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/youngster"><i class="fa fa-users" aria-hidden="true"></i>Mladi</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-info-circle" aria-hidden="true"></i>O Klubu
@@ -81,191 +84,159 @@
 </div>
 
 </header>
-<footer>
-
-  <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="static/img/pexels.jpeg" alt="Logotip/picture" style="width:300px;height:400px;">
-    </div>
-    <div class="flip-card-back">
-        <h2></h2>
-        <h3 style="color:#FFD700; margin-top: 75px;">OBLIKE SPONZORIRANJA</h3>
-        <p>Z veseljem se pogovorimo tudi o strateških božnostih sodelovanja.</p>
-        <a href="#">Preberi več</a>
-    </div>
-  </div>
+<div class="finalresult">
+    <div class="container">
+        <div class="result">
+        <h3>Zadnji <span>Rezultat</span></h3>
+            </div>
 </div>
 
-  <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="static/img/pexels1.jpeg" alt="Logotip/picture" style="width:300px;height:400px;">
-    </div>
-    <div class="flip-card-back">
-        <h2></h2>
-        <h3 style="color:#FFD700;">NADALJNI RAZVOJ</h3>
-        <p>"Mladi si zaslužijo najboljših možnih pogojev za razvoj tako pri izobrazbi,
-        kot tudi v športu. BC Koper bo v naslednjih letih postal najbolj napreden
-        razvojni center za mlade košarkarje."
-        <br>
-          <br>
-          - Luka Vončina
-        </p>
-        <a href="#">Preberi več</a>
-    </div>
-  </div>
-</div>
-
-  <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="static/img/pexels-photo-5170498.jpeg" alt="Logotip/picture" style="width:300px;height:400px;">
-    </div>
-    <div class="flip-card-back">
-        <h2></h2>
-        <h3 style="color:#FFD700; margin-top: 70px;">IZOBRAZBA, KOŠARKA, USPEH</h3>
-        <p>V Kopru želimo v naslednjih 5 letih postaviti mednarodno prepoznavno
-        košarkarsko akademijo za mlade.</p>
-        <a href="#">Preberi več</a>
-    </div>
-  </div>
-</div>
-
-  <!-- STATIC CONTENT CARDS
-
-  <div class="conteinercard">
-    <div class="card" data-tilt>
-      <div class="contentcard">
-        <h2></h2>
-        <h3 style="color:#FFD700;">IZOBRAZBA, KOŠARKA, USPEH</h3>
-        <p>V Kopru želimo v naslednjih 5 letih postaviti mednarodno prepoznavno
-        košarkarsko akademijo za mlade.</p>
-        <a href="#">Preberi več</a>
-      </div>
-    </div>
-  </div>
-  <div class="conteinercard">
-    <div class="card" data-tilt>
-      <div class="contentcard">
-        <h2></h2>
-        <h3 style="color:#FFD700;">NADALJNI RAZVOJ</h3>
-        <p>"Mladi si zaslužijo najboljših možnih pogojev za razvoj tako pri izobrazbi,
-        kot tudi v športu. BC Koper bo v naslednjih letih postal najbolj napreden
-        razvojni center za mlade košarkarje."
-        <br>
-          <br>
-          Luka Vončina
-        </p>
-        <a href="#">Preberi več</a>
-      </div>
-    </div>
-  </div>
-  <div class="conteinercard">
-    <div class="card" data-tilt>
-      <div class="contentcard">
-        <h2></h2>
-        <h3 style="color:#FFD700;">OBLIKE SPONZORIRANJA</h3>
-        <p>Z veseljem se pogovorimo tudi o strateških božnostih sodelovanja.</p>
-        <a href="#">Preberi več</a>
-      </div>
-    </div>
-  </div>
--->
-</footer>
-<!-- <div class="container">
-    <div id="end">
-
-    </div>
-    <div id="elements">
-        <div id="soc_med">
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-facebook"></a>
+<div id="scoreboard">
+    <div class="container">
+        <div class="homelogo">
+         <img src="static/img/Logo_2.png" width="150" height="130">
         </div>
-    <div id="end_img">
-        <img src="/static/img/Logo_1.png">
-    </div>
-    <div id="team_sections">
-            <a href="#" class="teams">Članska ekipa</a>
-            <a href="#" class="teams">U 19</a>
-            <a href="#" class="teams">U 17</a>
-            <a href="#" class="teams">U 15</a>
-            <a href="#" class="teams">U 13</a>
-            <a href="#" class="teams">Košarkaška šola</a>
-            <hr class="style2">
-    </div>
+        <div class="hometeam">
+            <h3>BC KOPER </h3>
+            </div>
+         <div class="score">Rezultat
+                <div class="table">
+					<div class="left"><h2>88</h2></div>
+                    <div class="middle"><h4>VS</h4></div>
+					<div class="right"><h2>58</h2></div>
+                </div>
+            </div>
+        <div class="awayteam">
+           <h3>AWAY TEAM NAME</h3>
+        </div>
+        <div class="awaylogo">
+         <img src="static/img/awayteam.png" width="150" height="150" border-radius="25px">
+        </div>
     </div>
 </div>
--->
-
-
-<div class="footer" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/static/img/court3.jpeg); background-repeat: no-repeat; background-size: cover;">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="first" style="text-align:left;">
-                        <h4> Selekcije</h4>
-
-                            <li><a href="/Senior">Članska ekipa</a></li>
-                            <li><a href="/Young">U-19</a></li>
-                            <li><a href="/Young">U-17</a></li>
-                            <li><a href="/Young">U-15</a></li>
-                            <li><a href="/Young">U-13</a></li>
-                            <li><a href="#">Košarkarska šola</a></li>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="second">
-                        <h4>BASKETBALL CLUB KOPER</h4>
-                        <img class="logo_image" src="/static/img/Logo_2.png" alt="Logo_kluba_2" style="width: 120px; height: auto;">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="third">
-                        <h4> Kontakt</h4>
-                        <ul>
-                            <li style="font-size: 14px;">Basketball Club Koper </li>
-                            <hr/>
-                            <li><i class="far fa-envelope"></i> info@bckoper.si</li>
-                            <li><i class="far fa-envelope"></i> bostjan.hrabar@bckoper.si</li>
-                            <li><i class="far fa-phone"></i> +386 41 523 076</li>
-                            <hr/>
-                            <li><i class="far fa-envelope"></i> luka.voncina@bckoper.si</li>
-                            <li><i class="far fa-phone"></i> +386 41 323 138</li>
-
-
-
-
-                          <li><i class="fas fa-map-marker-alt"></i> Koper </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="outlineborderbottom">
             </div>
+</div>
+
+</div>
+<div class="container">
+   <div class="titletimer">
+    <h3>DO NASLEDNJE <span>TEKME ŠE</span></h3>
+</div>
+</div>
+<div class="container-fluid" id="countdown">
+<div class="container" id="timer"></div>
+    </div>
+<div class="container">
+        <div class="bottomborder">
+            </div>
+</div>
+
+<section>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/img/pexels.jpeg" alt="Logotip/picture" width="300" height="400">
+    </div>
+    <div class="flip-card-back" id="firstcard">
+        <h2></h2>
+        <h3>TRENIRAJ Z NAMI</h3>
+        <p>Včlani se v BC Koper in postani KOŠARKAR!</p>
+        <a href="/contact">Vpisni list</a>
+    </div>
+  </div>
+</div>
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/img/pexels1.jpeg" alt="Logotip/picture" width="300" height="400">
+    </div>
+    <div class="flip-card-back" id="secondcard">
+        <h2></h2>
+        <h3>ZADNJE NOVICE</h3>
+        <p>MINI POKAL SPAR
+        <br>
+          Prejšnji konec tedna, 25. septembra, se je pričela nova sezona Mini Pokala SPAR -
+          tekmovanje za košarkarje mlajše od 13 let...
+        </p>
+        <a href="/Young">Preberi več</a>
+    </div>
+  </div>
+</div>
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/img/pexels-photo-5170498.jpeg" width="300" height="400" alt="Logotip/picture">
+    </div>
+    <div class="flip-card-back" id="thirdcard">
+        <h2></h2>
+        <h3>IZOBRAZBA, KOŠARKA, USPEH</h3>
+        <p>V Kopru želimo v naslednjih 5 letih postaviti mednarodno prepoznavno
+        košarkarsko akademijo za mlade...</p>
+        <a href="/about">Preberi več</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<div id="sponsors">
+    <h3>Naši <span>Sponzorji</span></h3>
+    <div class="container" id="spons">
+        <div class="sponsor1">
+            <img class="img-responsive" src="static/img/avtoplus.jpg" width="250" height="auto">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="line"></div>
-                    <div class="second2">
-                        <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram fa-2x margin"></i></a>
-                        <a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter fa-2x margin"></i></a>
-                        <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook fa-2x margin"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
-
-                    </div>
-
-                </div>
-            </div>
-            </div>
+        <div class="sponsor2">
+            <img class="img-responsive" src="static/img/lukakoper.png" width="250" height="auto">
+        </div>
+        <div class="sponsor3">
+            <img class="img-responsive" src="static/img/marjetica.png" width="250" height="auto">
+        </div>
+        <div class="sponsor4">
+            <img class="img-responsive" src="static/img/titus.png" width="250" height="auto">
+        </div>
     </div>
 
 
+</div>
+
+
+
+<div id="footer">
+<div class="container">
+  <div class="first">
+    <h4> Selekcije</h4>
+          <li><a href="/Senior">Članska ekipa</a></li>
+          <li><a href="/Young">U-17</a></li>
+          <li><a href="/Young">U-15</a></li>
+          <li><a href="/Young">U-13</a></li>
+          <li><a href="/Young">U-11</a></li>
+          <li><a href="/Young">U-9</a></li>
+          <li><a href="/contact">Vpis v košarkarsko šolo</a></li>
+  </div>
+  <div class="second">
+<img class="img-responsive" src="/static/img/LogoKK.png" width="200"height="auto" alt="Logo_kluba_2">
+
+      <div class="socials">
+          <a href="https://www.instagram.com/bckoper/" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/BCKOPER/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+          </div>
+      </div>
+
+  <div class="third">
+<h4> Kontakt</h4>
+     <li>Basketball Club Koper </li>
+     <li><i class="far fa-envelope"></i><a>info@bckoper.si</a></li>
+     <li><i class="far fa-envelope"></i><a>bostjan.hrabar@bckoper.si</a></li>
+     <li><i class="far fa-envelope"></i><a>luka.voncina@bckoper.si</a></li>
+     <li><i class="fas fa-map-marker-alt"></i><a>Koper</a></li>
+  </div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script>
 var slideIndex = 0;
@@ -308,5 +279,63 @@ function plusSlides(n) {
   }
 }
 </script>
+<script>
+    const SECOND = 1000;
+const MINUTE = 60 * SECOND;
+const HOUR = 60 * MINUTE;
+const DAY = 24 * HOUR;
+
+/**
+ * Calculates the difference between two timestamps, returns a quadruple with
+ * the difference in days, hours, minutes and seconds.
+ *
+ * @param {number} future
+ */
+const timestampDiff =
+    future =>
+    /** @param {number} past */
+    past =>
+        [DAY, HOUR, MINUTE, SECOND].map((time, index, times) => {
+            const diff = future - past;
+            const previousTime = times[index - 1];
+
+            return (
+                Math.floor(diff / time) -
+                (Math.floor(diff / previousTime) * (previousTime / time) || 0)
+            );
+        });
+
+/**
+ * Start timer and set the content of the element.
+ *
+ * @param {string} date
+ */
+const timer =
+    date =>
+    /** @param {HTMLElement} target */
+    target => {
+        const diff = timestampDiff(Date.parse(date));
+
+        return setInterval(() => {
+            const [days, hours, minutes, seconds] = diff(Date.now());
+
+            // Ideally we should have targets for every element
+            // to avoid updating the entire innerHTML of the container with
+            // every tick.
+            target.innerHTML = `
+                <div>${days}<span>Dni</span></div>
+                <div>${hours}<span>Ur</span></div>
+                <div>${minutes}<span>Minut</span></div>
+                <div>${seconds}<span>Sekund</span></div>
+            `;
+        }, SECOND);
+    };
+
+// We finally run it (and we save the interval return value if we want to stop it later)
+const interval = timer("nov 6, 2021 22:30:00")(document.querySelector("#timer"));
+
+</script>
+
+
 </body>
 </html>
