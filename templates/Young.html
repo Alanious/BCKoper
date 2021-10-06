@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="static/css/young.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
 </head>
 <body>
+
 <header>
-    <div id="firstnav">
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#12232E, #12232E);">
+    <div id="firstnav" style="font-family:Oswald;">
+<nav class="navbar fixed-top navbar-expand-lg" style="background-color:rgb(233,166,44);
+    background-image: -webkit-linear-gradient(160deg, rgba(0,160,227,0.8) 70.2%, rgba(255,208,1,0.8)50%); margin: 0;">
   <div class="container-fluid">
-      <img id="brand" src="static/img/LogoKK.png" class="img-fluid" alt="logotip kluba">
+      <img id="brand" src="static/img/Logo_2.png" class="img-fluid" alt="logotip kluba">
       <div class="topright" style="margin-top: 10px;">
     <button class="navbar-toggler ms-auto mb-2 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,17 +27,17 @@
         </div>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-           <li class="nav-item">
-          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/"><i class="fa fa-home" aria-hidden="true"></i>Domov</a>
-        </li>
         <li class="nav-item">
-          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Novice"><i class="fa fa-folder" aria-hidden="true"></i>Novice</a>
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/"><i class="fa fa-folder" aria-hidden="true"></i>Domov</a>
         </li>
         <li class="nav-item">
           <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Senior"><i class="fa fa-id-card" aria-hidden="true"></i>Člani</a>
         </li>
+        <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/youngster"><i class="fa fa-users" aria-hidden="true"></i>Mladi</a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-info-circle" aria-hidden="true"></i>O Klubu
+          <a class="nav-link text-white" href="/about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-info-circle" aria-hidden="true"></i>O Klubu
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dmtekst">
             <li><a class="dropdown-item text-white bg-transparent" href="/about">Poslanstvo</a></li>
@@ -48,10 +52,12 @@
 </div>
 </header>
 
-<section class="recentNews">
+
+
+<section class="recentNews" style="margin-top: 39px;">
 	<div class="container-fluid">
 		<h2 class="news-title">
-			Zadnje novice in napoved dogodkov
+			ARHIV NOVIC
 		</h2>
 		<div class="row">
 			<div class="ct-blog col-sm-6 col-md-4">
@@ -153,155 +159,62 @@
 		</div>
 	</div>
 </section>
-<!--<div class="container-fluid">
-<div class="youngster" style="background-color: #12232E; margin:0px;">
-    <p id="fotogalerija" style="color: white; text-align: center; ">
-        FOTOGALERIJA MLADINSKE EKIPE
-    </p>
-    <div id="slajd" class="slideshow-container">
 
-<div class="mySlides">
-  <p class="quotes">
-      <img src="/static/img/player1.jpg" style="border-radius: 30px; height: 350px; width: auto;">
-  </p>
-  <p class="author">Slika mladinske ekipe 1</p>
-</div>
-
-<div class="mySlides">
-  <p class="quotes">
-      <img src="/static/img/player5.jpg" style="border-radius: 30px; height: 350px; width: auto;">
-  </p>
-  <p class="author">Slika mladinske ekipe 2</p>
-</div>
-
-<div class="mySlides">
-  <p class="quotes">
-      <img src="/static/img/player3.jpg" style="border-radius: 30px; height: 350px; width: auto;">
-  </p>
-  <p class="author">Slika mladinske ekipe 3</p>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-
-</div>
-</div>
--->
-<div class="footer" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/static/img/court3.jpeg); background-repeat: no-repeat; background-size: cover;">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="first" style="text-align:left;">
-                        <h4> Selekcije</h4>
-
-                            <li><a href="/Senior">Članska ekipa</a></li>
-                            <li><a href="/Young">U-19</a></li>
-                            <li><a href="/Young">U-17</a></li>
-                            <li><a href="/Young">U-15</a></li>
-                            <li><a href="/Young">U-13</a></li>
-                            <li><a href="/Young">Košarkarska šola</a></li>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="second">
-                        <h4>BASKETBALL CLUB KOPER</h4>
-                        <img class="logo_image" src="/static/img/Logo_2.png" alt="Logo_kluba_2" style="width: 120px; height: auto;">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="third">
-                        <h4> Kontakt</h4>
-                        <ul>
-                            <li>Basketball Club Koper </li>
-                            <hr/>
-                            <li><i class="far fa-envelope"></i> info@bckoper.si</li>
-                            <li><i class="far fa-envelope"></i> bostjan.hrabar@bckoper.si</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> +386 41 523 076</li>
-                            <hr/>
-                            <li><i class="far fa-envelope"></i> luka.voncina@bckoper.si</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> +386 41 323 138</li>
-
-
-
-
-                          <li><i class="fas fa-map-marker-alt"></i> Koper </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div id="sponsors">
+    <h3>Naši <span>Sponzorji</span></h3>
+    <div class="container" id="spons">
+        <div class="sponsor1">
+            <img class="img-responsive" src="static/img/avtoplus.jpg" width="250" height="auto">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="line"></div>
-                    <div class="second2">
-                        <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram fa-2x margin"></i></a>
-                        <a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter fa-2x margin"></i></a>
-                        <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook fa-2x margin"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
-
-                    </div>
-
-                </div>
-            </div>
-            </div>
+        <div class="sponsor2">
+            <img class="img-responsive" src="static/img/lukakoper.png" width="250" height="auto">
+        </div>
+        <div class="sponsor3">
+            <img class="img-responsive" src="static/img/marjetica.png" width="250" height="auto">
+        </div>
+        <div class="sponsor4">
+            <img class="img-responsive" src="static/img/titus.png" width="250" height="auto">
+        </div>
     </div>
 
 
+</div>
+
+<div id="footer">
+<div class="container">
+  <div class="first">
+    <h4> Selekcije</h4>
+          <li><a href="/Senior">Članska ekipa</a></li>
+          <li><a href="/Young">U-17</a></li>
+          <li><a href="/Young">U-15</a></li>
+          <li><a href="/Young">U-13</a></li>
+          <li><a href="/Young">U-11</a></li>
+          <li><a href="/Young">U-9</a></li>
+          <li><a href="/contact">Vpis v košarkarsko šolo</a></li>
+  </div>
+  <div class="second">
+<img class="img-responsive" src="/static/img/LogoKK.png" width="200"height="auto" alt="Logo_kluba_2">
+
+      <div class="socials">
+          <a href="https://www.instagram.com/bckoper/" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/BCKOPER/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+          </div>
+      </div>
+
+  <div class="third">
+<h4> Kontakt</h4>
+     <li>Basketball Club Koper </li>
+     <li><i class="far fa-envelope"></i><a>info@bckoper.si</a></li>
+     <li><i class="far fa-envelope"></i><a>bostjan.hrabar@bckoper.si</a></li>
+     <li><i class="far fa-envelope"></i><a>luka.voncina@bckoper.si</a></li>
+     <li><i class="fas fa-map-marker-alt"></i><a>Koper</a></li>
+  </div>
+</div>
+</div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<script>
-var slideIndex = 0;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  var myTimer;
 
-showSlides();
-
-function showSlides() {
-    var i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    dots[slideIndex-1].className += " active";
-    slides[slideIndex-1].style.display = "block";
-    myTimer = setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
-
-function currentSlide(no) {
-    var i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slideIndex = no;
-    slides[no-1].style.display = "block";
-    dots[no-1].className += " active";
-    clearTimeout(myTimer);
-    myTimer = setTimeout(showSlides, 5000);
-}
-
-function plusSlides(n) {
-  var newslideIndex = slideIndex + n;
-  if(newslideIndex < 4 && newslideIndex > 0){
-     currentSlide(newslideIndex);
-  }
-}
-</script>
 </body>
 </html>

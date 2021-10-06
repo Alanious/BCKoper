@@ -1,2 +1,6 @@
 Flask
 gunicorn==19.0.0
+WTForms
+Flask-Mail
+email_validator
+Flask-WTF
