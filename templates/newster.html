@@ -3,100 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARHIV NOVIC</title>
+    <title>Basketball Club Koper</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/newster.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <header>
-<img id="brand" src="static/img/logo_2.png" class="img-fluid" alt="logotip kluba">
-    <h2 class="sign">ARHIV NOVIC</h2>
+    <div id="firstnav">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="background-color: transparent !important;">
+  <div class="container-fluid">
+      <img id="brand" src="static/img/logo_2.png" class="img-fluid" alt="logotip kluba">
+      <div class="topright" style="margin-top: 10px;">
+    <button class="navbar-toggler ms-auto mb-2 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/"><i class="fa fa-home" aria-hidden="true"></i>Domov</a>
+        </li>
+        <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Senior"><i class="fa fa-id-card" aria-hidden="true"></i>Člani</a>
+        </li>
+        <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/youngster"><i class="fa fa-users" aria-hidden="true"></i>Mladi</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white" href="/about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-info-circle" aria-hidden="true"></i>O Klubu
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dmtekst">
+            <li><a class="dropdown-item text-white bg-transparent" href="/about">Poslanstvo</a></li>
+            <li><a class="dropdown-item text-white bg-transparent" href="/about">Vodstvo</a></li>
+            <li><a class="dropdown-item text-white bg-transparent" href="/about">Kontakt</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
 </header>
-<br>
-<br>
-<hr>
-<container class="container-fluid" id="news">
-    <img id="first" src="static/img/zakon.jpeg" class="img-fluid" alt="news_one">
-    <p id="first_p">
-        V košarkarskem društvu BC KOPER smo pred zaključkom šolskega leta organizirali in izvedli
-        tri košarkarske dogodke, katerih slogan je bil Košarka je Zakon. S tem smo hoteli košarko
-        približati najmlajšim osnovnošolcem in jim obenem predstaviti novoustanovljeni košarkarski
-        klub. Prvi dogodek smo izvedli v soboto, 22. maja v telovadnici Srednje tehnične šole v
-        Kopru.
-        <br>
-        <br>
-        Pripravili smo jim vadbe na različnih postajah, kjer so spoznavali osnovne košarkarske
-        elemente: vodenje, podajanje in lovljenje žoge, metanje na koš ipd. Poleg košarkarskih
-        elementov pa smo dopoldansko dogajanje popestrili še s teniškimi
-        osnovami.
-        <br>
-        <br>
-        Pri izvedbi dogodkov so sodelovali različni strokovni sodelavci, igralci starejših kategorij,
-        starši. Udeležencem smo zagotovili vodo in prigrizek na koncu dogodka. Vsi trije dogodki so
-        bili za udeležence brezplačni. Vse tri dogodke je spremljala tudi dobrodelnost. V sodelovanju
-        s Palčico pomagalčico in dobrodelnimi škrati smo zbirali plastične zamaške.
-    </p>
-    <br>
-    <hr>
-    <br>
-    <img id="second" src="static/img/mini.jpeg" class="img-fluid" alt="news_sec">
-    <p id="sec_p">
-        Prejšnji konec tedna, 25. septembra, se je pričela nova sezona Mini Pokala SPAR -
-        tekmovanje za košarkarje mlajše od 13 let. Tekmovanje poteka vse do meseca februarja, ko
-        bo na sporedu finalni turnir Pokal SPAR, kjer se bodo medseboj udarile najmočnejše članske
-        ekipe v državi. Vzporedno s slednjim bo na sporedu tudi finale Mini Pokala SPAR.
-        <br>
-        <br>
-        Naši selekciji, Rumeni in Modri, sta se v soboto, 25. septembra, v Športni dvorani Livade
-        Izola, pomerili s prvimi nasprotniki. Rumena ekipa novega Koprskega kluba, je premagala kar
-        oba tekmeca; KK Izola z izjemno zmago s 104:19, KK Cerknico pa s 56:18. BC Koper Modri, pa
-        so v prvi tekmi proti KK Postojna, žal morali priznati premoč s 50:29, vendar so naslednjo
-        tekmo proti Košarkaškemu klubu Vrhnika B zmagali z veliko prednostjo (65:18).
-        <br>
-        <br>
-        V naslednjem krogu Mini Pokala SPAR, ki je na sporedu 9. oktobra, bomo navijali za prvo
-        ekipo, BC Koper Rumeni, ki se bodo v domači dvorani pomerili proti KK Kras! BC Koper
-        Modri se, zaradi premajhnega števila igralcev, žal niso uvrstili v naslednji krog.
-        <br>
-        <br>
-        Čestitke fantje!
-    </p>
-    <br>
-    <hr>
-    <br>
-    <img id="third" src="static/img/group6.jpeg" class="img-fluid" alt="news_third">
-    <p id="third_p">
-        Košarkarski klub BC Koper sporoča, da bomo v letošnji sezoni sodelovali tudi v članskem
-        tekmovanju. Ekipa se je v preteklih tednih spoznavala in trenirala, ter se tako pripravljala na
-        začetek sezone 4. državne košarkarske lige.
-        <br>
-        <br>
-        Sezona se bo pričela 16. oktobra, ko se bojo naši člani v gosteh potegovali za zmago z
-        Ivančno Gorico. Naslednji konec tedna, pa se vračajo v domačo dvorano na STŠ Koper, kjer
-        se bodo pomerili z KK Kras. Do takrat, pa jih ta četrtek čaka prijateljska tekma v Trstu, z
-        ekipo KK Bor.
-        <br>
-        <br>
-        Seznam igralcev: Erik Benigar, Gaj Ferluga, Gaj Gombar, Matic Hrabar, Tin Hvalec, Anej
-        Koradin, Miha Markič, Izak Molan, Leonard Pegan, Maj Primik, Vito Stanovnik, Rok Terčelj,
-        Alvin Testen, Andrej Volk, Klemen Žigon, Marko Zaro
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <a class="btn" href="/"><i class="fa fa-home" aria-hidden="true" style="font-size: 2em;"></i></a>
-    <br>
-    <br>
-    <br>
 
+<<<<<<< HEAD:templates/newster.html
 
 </container>
+=======
+<div class="container-fluid" id="standings">
+    <h2>LESTVICA</h2>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>MESTO</th>
+            <th>KLUB</th>
+            <th>ZMAGE</th>
+            <th>PORAZI</th>
+            <th>POINTS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <tr class="active-row">
+            <td>1</td>
+            <td>Košarkarski klub Koper</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+            <td>2</td>
+            <td>Team 2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tr>
+            <td>3</td>
+            <td>Team 3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tr>
+            <td>4</td>
+            <td>Team 4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tr>
+            <td>5</td>
+            <td>Team 5</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
+</table>
+    </div>
+
+<section class="recentNews" style="margin-top: 39px;">
+	<div class="container-fluid">
+		<h2 class="news-title">
+			ZADNJE NOVICE
+		</h2>
+		<div class="row">
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="/news"><img alt="News Entry" src="/static/img/zakon.jpeg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>Maj</span><strong>27</strong>
+						</div>
+						<h3 class="ct-blog-header">
+							V košarkarskem društvu BC KOPER smo pred zaključkom šolskega leta organizirali in izvedli
+                            tri košarkarske dogodke, katerih slogan je bil Košarka je Zakon.
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="/news"><img alt="News Entry" src="/static/img/mini.jpeg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>September</span><strong>28</strong>
+						</div>
+						<h3 class="ct-blog-header">
+                        Prejšnji konec tedna, 25. septembra, se je pričela nova sezona Mini Pokala SPAR -
+							tekmovanje za košarkarje mlajše od 13 let.
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="/news"><img alt="News Entry" src="/static/img/group6.jpeg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>September</span><strong>30</strong>
+						</div>
+						<h3 class="ct-blog-header">
+							Košarkarski klub BC Koper sporoča, da bomo v letošnji sezoni sodelovali tudi v članskem
+                             tekmovanju.
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!--<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="#"><img alt="News Entry" src="/static/img/group5.jpeg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>Februar</span><strong>23</strong>
+						</div>
+						<h3 class="ct-blog-header">
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="#"><img alt="News Entry" src="/static/img/group4.jpeg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>Februar</span><strong>20</strong>
+						</div>
+						<h3 class="ct-blog-header">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="#"><img alt="News Entry" src="/static/img/group3.jpeg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>Februar</span><strong>16</strong>
+						</div>
+						<h3 class="ct-blog-header">
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+						</h3>
+					</div>
+				</div>
+			</div>-->
+		</div>
+		<div class="btn-news btn-contests">
+			<!--<a href="#">POGLEJ VSE NOVICE</a>-->
+		</div>
+	</div>
+</section>
+
+<div id="sponsors">
+    <h3>Naši <span>Sponzorji</span></h3>
+    <div class="container" id="spons">
+        <div class="sponsor1">
+            <img class="img-responsive" src="static/img/avtoplus.jpg" width="250" height="auto">
+        </div>
+        <div class="sponsor2">
+            <img class="img-responsive" src="static/img/lukakoper.png" width="250" height="auto">
+        </div>
+        <div class="sponsor3">
+            <img class="img-responsive" src="static/img/marjetica.png" width="250" height="auto">
+        </div>
+        <div class="sponsor4">
+            <img class="img-responsive" src="static/img/titus.png" width="250" height="auto">
+        </div>
+    </div>
+</div>
+    <div id="footer">
+<div class="container">
+  <div class="first">
+    <h4> Selekcije</h4>
+          <li><a href="/Senior">Članska ekipa</a></li>
+          <li><a href="/Young">U-17</a></li>
+          <li><a href="/Young">U-15</a></li>
+          <li><a href="/Young">U-13</a></li>
+          <li><a href="/Young">U-11</a></li>
+          <li><a href="/Young">U-9</a></li>
+          <li><a href="/contact">Vpis v košarkarsko šolo</a></li>
+  </div>
+  <div class="second">
+<img class="img-responsive" src="/static/img/LogoKK.png" width="200"height="auto" alt="Logo_kluba_2">
+
+      <div class="socials">
+          <a href="https://www.instagram.com/bckoper/" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/BCKOPER/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+          </div>
+      </div>
+
+  <div class="third">
+<h4> Kontakt</h4>
+     <li>Basketball Club Koper </li>
+     <li><i class="far fa-envelope"></i><a href="mailto:info@bckoper.si">info@bckoper.si</a></li>
+     <li><i class="far fa-envelope"></i><a href="mailto:bostjan.hrabar@bckoper.si">bostjan.hrabar@bckoper.si</a></li>
+     <li><i class="far fa-envelope"></i><a href="mailto:luka.voncina@bckoper.si">luka.voncina@bckoper.si</a></li>
+     <li><i class="fas fa-map-marker-alt"></i><a>Koper</a></li>
+  </div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+>>>>>>> a5dcbca90088193f5cc0ff323dcb99a1769fccb3:templates/news.html
 </body>
 </html>
