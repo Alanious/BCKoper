@@ -5,14 +5,14 @@
 
 
 }
-header{
-	max-width: 100%;
-	height: 300px;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url("https://vojkorotar.files.wordpress.com/2013/08/dvorana-bonifika-po-prenovi-koper-20-8-2013-foto-vojko-rotar-0042.jpg") center no-repeat;
-	background-size: cover;
-    overflow: hidden;
+header {
+    height: 90px;
+    padding: 10px 0;
+     overflow: hidden;
+     width: 100%;
+
 }
-/*NAVBAR SECTION*/
+
 #firstnav{
     display: block;
     justify-content: space-between;
@@ -29,7 +29,7 @@ header{
     #brand {
         transition:transform .7s ease-in-out;
         cursor:pointer;
-        width:150px;
+        width:110px;
         height:auto;}
 
     #brand:hover{
@@ -125,66 +125,9 @@ nav ul li a{
     margin-top: 20px;
 }
 
-.container-fluid, #standings, table{
-margin-left: auto;
-margin-right: auto;
+.game {
+height: 300px;
 }
-
-#standings{
-   align-items: center;
-   text-align: center;
-   justify-content: center;
-   margin-top: 70px;
-   margin-bottom: 60px;
-}
-
-#standings h2{
-   font-family:"Oswald";
-   margin-bottom: 20px;
-   color: rgba(250,199,16);
-   margin-bottom: 30px;
-}
-
-.styled-table {
-    border-collapse: collapse;
-    justify-content: center;
-    font-size: 1.2em;
-    min-width: 400px;
-    box-shadow: 0 0 20px;
-
-
-}
-
-.styled-table thead tr {
-    background-color: rgba(80,161,194);
-    color: #ffffff;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-    font-family:"Oswald";
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid rgba(80,161,194);
-}
-
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: rgba(250,199,16);
-    /*#E52B2B*/
-}
-
 
 /*game*/
 
@@ -350,28 +293,28 @@ body{
   margin-bottom: 1px;
 }
 .play-area section span{
-    display: block;
-    height: 90px;
-    width: 90px;
-    margin: 2px;
-    color: #56baed;
-    font-size: 40px;
-    line-height: 80px;
-    text-align: center;
-    border-radius: 5px;
-    background: #fff;
+  display: block;
+  height: 90px;
+  width: 90px;
+  margin: 2px;
+  color: #56baed;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
 }
 
 .result-box{
-    padding: 25px 20px;
-    border-radius: 5px;
-    max-width: 400px;
-    width: 100%;
-    opacity: 0;
-    text-align: center;
-    background: #fff;
-    pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.9);
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  background: #fff;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
 }
 .result-box.show{
   opacity: 1;
@@ -465,19 +408,22 @@ body{
         text-decoration: none
     }
 .second{
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
 }
 .socials{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-evenly;
-    height:30%;
-    width:30%;
+
+display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:space-evenly;
+height:30%;
+width:30%;
 }
 
 .socials a {
@@ -561,28 +507,28 @@ justify-content:center;
 }
 
 #sponsors h3{
-    font-weight:400;
-    font-style:normal;
-    font-size:38px;
-    color:rgb(255,208,1);
-    none solid rgb(0, 117, 62);
-    font-family:"Oswald";
-    text-transform:uppercase;
-    text-align:center;
+font-weight:400;
+font-style:normal;
+font-size:38px;
+color:rgb(255,208,1);
+none solid rgb(0, 117, 62);
+font-family:"Oswald";
+text-transform:uppercase;
+text-align:center;
 }
 
 #sponsors span{
-    color:black;
+color:black;
 }
 
 #spons{
-    display:flex;
-    height:100%;
-    width: 100%;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    background-color: white;
+display:flex;
+height:100%;
+width: 100%;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+background-color: white;
 }
 
 
@@ -590,14 +536,13 @@ justify-content:center;
 .recentNews {
     background-color:rgb(233,166,44);
     background-image: -webkit-linear-gradient(160deg, rgba(0,160,227,0.8) 76%, rgba(255,208,1,0.8)50%);
-
 }
 .recentNews .news-title {
     text-align:center;
-    padding-top:60px;
+    padding-top:30px;
     padding-bottom:30px;
     font-family:"Oswald";;
-    font-size:28px;
+    font-size:25px;
     font-weight:bold;
     color: #fff;
 }
@@ -606,7 +551,6 @@ justify-content:center;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
-
 }
 .recentNews .ct-blog {
     margin-bottom: 30px;
@@ -636,7 +580,7 @@ justify-content:center;
 .ct-blog-content .ct-blog-date {
     border-right: 1px solid #95A5A6;
     display: table-cell;
-    font-family:"Oswald";
+    font-family: "Lato", sans-serif;
     padding: 0px 18px 0px 15px;
     text-align: center;
 }
@@ -646,34 +590,30 @@ justify-content:center;
     font-weight: 700;
     display: block;
     line-height: 1;
-
 }
 .ct-blog-content .ct-blog-date strong {
     font-size: 25px;
     color: rgb(20, 117, 175);
-    font-family:"Oswald";
 }
 .ct-blog-content .ct-blog-header {
     color: #000;
     display: table-cell;
     font-size: 22px;
-    font-weight: 550;
+    font-weight: 700;
     letter-spacing: -0.2px;
     line-height: 1.1;
     padding: 0 20px;
     vertical-align: top;
-    font-family:"Oswald";
 }
 .btn-news {
     color: #333;
     font-size: 14px;
     padding-bottom: 30px;
     text-align: center;
-
 }
 .btn-news.btn-contests a {
     color: #fff;
-    font-family:"Oswald";
+    font-family: 'nimbus-sans-condensed', sans-serif;
     font-size: 24px;
     transition: all 0.2s ease-in-out 0s;
 }
@@ -685,143 +625,4 @@ justify-content:center;
 position: relative;
 top: 60px;
 font-size: 24px;
-}
-
-@media screen and (min-width:320px) and (max-width:640px) {
-
-#standings, table{
-width: 100%;
-height: auto;
-font-size: 9px;
-margin-left: 0;
-margin-right: 0;
-}
-
-#sponsors h3{
-font-size:20px;}
-
-.styled-table {
-    border-collapse: collapse;
-    justify-content: center;
-    font-size: 0.9em;
-    min-width: 100px;
-    box-shadow: 0 0 20px;
-}
-
-
-.styled-table th,
-.styled-table td {
-    padding: 5px;
-    font-family:"Oswald";
-}
-
-#standings h2{
-   font-size: 17px;
-}
-
-.recentNews .news-title {
-    text-align:center;
-    padding-top:30px;
-    padding-bottom:30px;
-    font-family:"Oswald";;
-    font-size:17px;
-    font-weight:bold;
-    color: #fff;
-}
-
-#footer{
-margin-left: -11px;
-
-}
-
-.first h4, .third h4{
-font-size:16px;
-}
-.second{
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-height:100%;
-}
-.img-responsive{
-width:80px;
-display:block;
-height:auto;
-}
-.third{
-display:flex;
-flex-direction:column;
-justify-content:start;
-align-items:flex-end;
-width:100%;
-height:auto;
-}
-
-.first li {
-font-size:15px;
-}
-
-.third li {
-font-size:15px;
-}
-
-.recentNews .container-fluid .row{
-width: 350px;
-height: auto;
-margin-left: auto;
-margin-right: auto;
-}
-
-ct-blog-content .ct-blog-date {
-    border-right: 1px solid #95A5A6;
-    display: table-cell;
-    font-family: "Lato", sans-serif;
-    padding: 0px 18px 0px 15px;
-    text-align: center;
-}
-.ct-blog-content .ct-blog-date span {
-    font-size: 12px;
-    color: rgb(20, 117, 175);
-    font-weight: 700;
-    display: block;
-    line-height: 1;
-}
-.ct-blog-content .ct-blog-date strong {
-    font-size: 18px;
-    color: rgb(20, 117, 175);
-}
-.ct-blog-content .ct-blog-header {
-    color: #000;
-    display: table-cell;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: -0.2px;
-    line-height: 1.1;
-    padding: 0 20px;
-    vertical-align: top;
-}
-
-#firstnav{
-        font-size:15px; /*nav size*/
-  }
-    .dropdown .dropdown-menu{
-    background-color: transparent;
-    border-style:none;
-
-}
-
-
-#dmtekst{
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-  #brand{
-  width:70px;
-  height:auto;
-  }
-  header{
-  height:auto;
-  }
-
 }
