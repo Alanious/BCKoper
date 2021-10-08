@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.sign{
+margin-top: 20px;
+text-align: center;
+margin-bottom: 30px;
+font-family: 'Brush Script MT', cursive;
+font-size: 90px;
+color: white;
+}
+
+header{
+	max-width: 100%;
+	height: 300px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url("https://vojkorotar.files.wordpress.com/2013/08/dvorana-bonifika-po-prenovi-koper-20-8-2013-foto-vojko-rotar-0042.jpg") center no-repeat;
+	background-size: cover;
+    overflow: hidden;
+
+}
+
+#brand {
+    transition:transform .7s ease-in-out;
+    cursor:pointer;
+    width:150px;
+    height:auto;
+}
+
+#brand:hover{
+    transform:rotate(360deg);
+}
+
+hr{
+width: 85%;
+}
+
+#first{
+margin-top: 20px;
+width: 450px;
+height: auto;
+float: left;
+margin-right: 15px;
+margin-left: 15px;
+}
+
+#second, #third{
+width: 450px;
+height: auto;
+float: left;
+margin-right: 15px;
+margin-left: 15px;
+}
+
+
+#first_p {
+margin-top: -10px;
+flex-direction: end;
+text-align: justify;
+width: 85%;
+font-family:"Oswald";
+font-size: 17px;
+}
+
+#sec_p, #third_p{
+flex-direction: end;
+text-align: justify;
+width: 85%;
+font-family:"Oswald";
+font-size: 17px;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 14%;
+  float: right;
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(20, 117, 175);
+}
+
+@media screen and (min-width:320px) and (max-width:640px){
+
+.sign{
+font-size: 40px;
+margin-top: 90px;
+}
+
+#brand{
+width: 100px;
+}
+
+hr{
+width: 100%;
+}
+
+#first, #second, #third{
+margin-bottom: 10px;
+width: 90%;
+}
+
+
+#first_p, #sec_p, #third_p{
+margin-left: auto;
+margin-right: auto;
+width: 90%;
+font-family:"Oswald";
+font-size: 14px;
+}
+
+}

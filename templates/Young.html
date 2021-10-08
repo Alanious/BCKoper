@@ -17,9 +17,8 @@
 <body>
 
 <header>
-    <div id="firstnav" style="font-family:Oswald;">
-<nav class="navbar fixed-top navbar-expand-lg" style="background-color:rgb(233,166,44);
-    background-image: -webkit-linear-gradient(160deg, rgba(0,160,227,0.8) 70.66%, rgba(255,208,1,0.8)50%); margin: 0;">
+    <div id="firstnav">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="background-color: transparent !important;">
   <div class="container-fluid">
       <img id="brand" src="static/img/Logo_2.png" class="img-fluid" alt="logotip kluba">
       <div class="topright" style="margin-top: 10px;">
@@ -29,8 +28,8 @@
         </div>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/"><i class="fa fa-folder" aria-hidden="true"></i>Domov</a>
+          <li class="nav-item">
+          <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/"><i class="fa fa-home" aria-hidden="true"></i>Domov</a>
         </li>
         <li class="nav-item">
           <a style="background-color: transparent;" class="nav-link active text-white" aria-current="page" href="/Senior"><i class="fa fa-id-card" aria-hidden="true"></i>Člani</a>
@@ -54,9 +53,58 @@
 </div>
 </header>
 
-<div class="game">
-
-</div>
+<div class="container-fluid" id="standings">
+    <h2>LESTVICA</h2>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>MESTO</th>
+            <th>KLUB</th>
+            <th>ZMAGE</th>
+            <th>PORAZI</th>
+            <th>POINTS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <tr class="active-row">
+            <td>1</td>
+            <td>Košarkarski klub Koper</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+        </tr>
+            <td>2</td>
+            <td>Team 2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tr>
+            <td>3</td>
+            <td>Team 3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tr>
+            <td>4</td>
+            <td>Team 4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tr>
+            <td>5</td>
+            <td>Team 5</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
+</table>
+    </div>
 
 <section class="recentNews" style="margin-top: 39px;">
 	<div class="container-fluid">
@@ -67,7 +115,7 @@
 			<div class="ct-blog col-sm-6 col-md-4">
 				<div class="inner">
 					<div class="fauxcrop">
-						<a href="#"><img alt="News Entry" src="/static/img/zakon.jpeg"></a>
+						<a href="/news"><img alt="News Entry" src="/static/img/zakon.jpeg"></a>
 					</div>
 					<div class="ct-blog-content">
 						<div class="ct-blog-date">
@@ -83,7 +131,7 @@
 			<div class="ct-blog col-sm-6 col-md-4">
 				<div class="inner">
 					<div class="fauxcrop">
-						<a href="#"><img alt="News Entry" src="/static/img/mini.jpeg"></a>
+						<a href="/news"><img alt="News Entry" src="/static/img/mini.jpeg"></a>
 					</div>
 					<div class="ct-blog-content">
 						<div class="ct-blog-date">
@@ -99,7 +147,7 @@
 			<div class="ct-blog col-sm-6 col-md-4">
 				<div class="inner">
 					<div class="fauxcrop">
-						<a href="#"><img alt="News Entry" src="/static/img/group6.jpeg"></a>
+						<a href="/news"><img alt="News Entry" src="/static/img/group6.jpeg"></a>
 					</div>
 					<div class="ct-blog-content">
 						<div class="ct-blog-date">
