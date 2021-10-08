@@ -1,3 +1,4 @@
+/*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,6 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+/*
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -141,6 +143,7 @@ nav ul li a{
 }
 
 /* Small devices (landscape phones, 544px and up) */
+/*
 @media (min-width: 544px) {
     #firstnav{
         font-size: 15px;
@@ -152,28 +155,31 @@ nav ul li a{
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/*
 @media (min-width: 768px) {
     #firstnav{
         font-size: 20px; /*1rem = 16px*/
-  }
+  }/*
     #dmtekst{
         float: left;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
+/*
 @media (min-width: 992px) {
     #firstnav{
         font-size: 25x; /*1rem = 16px*/
-  }
+  }/*
     #dmtekst{
         float: left;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
+/*
 @media (min-width: 1200px) {
     #firstnav{font-size:18px;} /*1rem = 16px*/
-  }
+  }/*
     #dmtekst{
         float: left;
   }
@@ -223,7 +229,7 @@ nav ul li a{
     list-style: none;
     padding-bottom: 10px; /* change space between links*/
 }
-
+/*
 .first a, .first2 a {
     color: rgb(206, 206, 206);
     text-decoration: none;
@@ -387,4 +393,37 @@ nav ul li a{
     text-align:center;
     margin-top:100px;
     margin-bottom:100px;
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
+body {
+  background-color: #ffe8d6;
+  font-family:"Roboto";
+}
+
+h1{
+  font-weight:100;
+  font-size:27pt;
+  color:black;
+}
+
+p{font-weight:300;}
+
+.warning-content {
+	position:absolute;
+  top:25%;
+  width:100%;
+  height:300px;
+  text-align:center;
+  margin:0;
+}
+button{
+padding:10px;
+width:80px;
+background-color:#dee2e6
+border-radius:30px;
+}
+button a{
+text-decoration:none;
 }

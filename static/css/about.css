@@ -1,30 +1,66 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-* {
-    margin: 0;
-    padding 0;
-  font-family: "Poppins", sans-serif;
 
-
-
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-header {
-    height: 90px;
-    background-color:  #12232E;
-    padding: 10px 0;
-     overflow: hidden;
-     width: 100%;
+body{
+font-family:"Oswald";
 }
 
-
+header{
+	max-width: 100%;
+	height: 300px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url("https://vojkorotar.files.wordpress.com/2013/08/dvorana-bonifika-po-prenovi-koper-20-8-2013-foto-vojko-rotar-0042.jpg") center no-repeat;
+	background-size: cover;
+    overflow: hidden;
+}
+/*NAVBAR SECTION*/
 #firstnav{
-    display: flex;
+    display: block;
     justify-content: space-between;
     text-transform: uppercase;
-    font-size: 1.6rem;
     background-color: none;
-    text-decoration: none;
+    font-family:"Oswald";
+    font-size: 16px;
+    weight:400;
+    line-height: 20px;
+    text-decoration: none solid rgb(54, 53, 51);
+    word-spacing: 0px;
+    }
+
+    #brand {
+        transition:transform .7s ease-in-out;
+        cursor:pointer;
+        width:150px;
+        height:auto;}
+
+    #brand:hover{
+    transform:rotate(360deg);
+    }
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
 }
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+
+nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+
 nav ul li a{
 	padding: 1rem 0;
 	margin: 0 3rem;
@@ -42,7 +78,7 @@ nav ul li a::after{
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background-color:rgb(255, 215, 0);
+	background-color: yellow;
 	left: 0;
 	transform: scaleX(0);
 	transition: all .5s;
@@ -71,25 +107,17 @@ nav ul li a:hover::after{
 		transform: translateX(0);
 	}
 }
-
 .dropdown .dropdown-menu{
-    background-color: #12232E;
-    width:100%;
-
-
-
-
+    background-color: transparent;
+    border-style:none;
 }
+
+
 #dmtekst{
     font-size: 14px;
-    text-transform: uppercase;}
-
-
-#brand{
-    max-width: 17vh;
-	height: auto;
-
+    text-transform: uppercase;
 }
+
 
 nav ul li a{
     background: none;
@@ -98,289 +126,645 @@ nav ul li a{
     position: relative;
     text-decoration: none;
     transition-duration: 0.5s;
-
+    margin-top: 20px;
 }
 
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
-    #firstnav{
-        font-size: 15px;
-  } /*1rem = 16px*/
-    #dmtekst{
-        float: left;
-  }
+/* POSLANSTVO + gmaps */
 
-}
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-    #firstnav{
-        font-size: 20px; /*1rem = 16px*/
-  }
-    #dmtekst{
-        float: left;
-  }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #firstnav{
-        font-size: 25x; /*1rem = 16px*/
-  }
-    #dmtekst{
-        float: left;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    #firstnav{font-size:18px;} /*1rem = 16px*/
-  }
-    #dmtekst{
-        float: left;
-  }
+#about{
+margin-top:60px;
+display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 0.5fr;
+gap:20px;
 }
 
 
-h1{
-    font-size: 2.2em;
-    text-align: center;
-    padding: 60px 40px 30px;
-    color: #3D4852;
-    line-height: 1.2;
-}
-/* ZAČETEK SKLOPA POSLANSTVO */
-.about-company-section{
-background-color:	#4DA8DA;
-background-size: cover;
-height:500px;
-}
-.about-company-section h2:after{
-content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-background-color:#12232E;
-}
 
-.row{
-margin-top: 140px;
+ .poslanstvo h3{
+padding:10px;
+ margin-bottom:30px;
+ display:flex;
+justify-content:flex-start;
+align-items:center;
+ background-color:#eff6e0;
+ text-transform:uppercase;
+ font-family:"Oswald";
+ font-weight:600;
+ height:60px;
+border-left: 8px solid rgb(225,169,48);
+border-radius:2px;
+ }
 
 
-}
-.img-fluid{
-  object-fit: cover;
+ .text{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+justify-content:center;
+height:auto;
+
+ }
+
+ .text p{
+ font-family:"Oswald",sans-serif;
+font-size:20px;
+ color:#000000;
+ width:100%;
+text-decoration:none;
+text-align:left;
+margin:0px;
 
 
-}
-p{
-    line-height: 1.6;
-    font-size: 18px;
-    text-align: center;
-    color: white;
+ }
+
+ #quotes{
+ display:flex;
+ flex-direction:row;
+ width:100%;
+ height:auto;
+ gap:30px;
+
+ }
+ #quotes hr{
+border:         none;
+    border-left:    1px solid black;
+    height:         auto;
+    width:          1px;
+ }
 
 
+.lefttext p{
+text-align:left;
+color:#000000;
+ font-family:"Oswald",sans-serif;
+font-size:20px;
+text-decoration:none;
 }
-/* KONEC SKLOPA POSLANSTVO */
 
-/* ZAČETEK SKLOPA VODSTVO */
-.team{
-background-color: #12232E;
+.righttext p{
+text-align:left;
+color:#000000;
+ font-family:"Oswald",sans-serif;
+font-size:20px;
+text-decoration:none;
+}
 
-}
-#vodstvo{
-color:white;
-}
-#row2{
-margin-top: 100px;
-}
-.our-team{
-color: white;
 
-}
-.profiles {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 80px;
-}
-.profile {
-  flex-basis: 260px;
-}
-.profile .profile-img {
-  height: 250px;
-  width: 210px;
-  object-fit: cover; /*tu sem dodal object fit da ko zmanjsas stran se slika prilagodi*/
-  cursor: pointer;
-  border-radius: 50%
-}
-.user-name {
-  margin-top: 30px;
-  font-size: 35px;
-}
-.profile h4{
-font-size:18px;
-text-align:center;
-}
-.profile h5 {
-  font-size:14px;
-  font-weight: 100;
-  letter-spacing: 3px;
-  color: #ccc;
-  text-align:center;
 
-}
-.profile p {
-  font-size: 16px;
-  margin-top: 20px;
-  text-align: justify;
-}
-@media only screen and (max-width: 1150px) {
-  .profiles {
-    flex-direction: column;
-  }
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .profile p {
-    text-align: center;
-    margin: 20px 60px 80px 60px;
-    font-size: 20px;
-  }
-  .profiles {
-    margin: 20px 0;
-  }
-  .profile p {
-    margin: 20px 10px 80px 10px;
-  }
-  }
-/* KONEC SKLOPA VODSTVO */
-
-.contactus{
-background-color: #4DA8DA;
-background-size:overflow;
-position:absolute;
+#map {
+display:flex;
+flex-direction:column;
 width:100%;
-}
-.contactus h2:after{
-content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-background-color:#007CC7;
+height:auto;
+ }
+
+ #map h3{
+ padding:10px;
+ margin-bottom:30px;
+ background-color:#eff6e0;
+ text-transform:uppercase;
+ font-family:"Oswald";
+ font-weight:600;
+ height:70px;
+border-left: 8px solid rgb(225,169,48);
+border-radius:2px;
+display:flex;
+align-items:center;
+ }
+
+/* POSLANSTVO + gmaps  end*/
+
+/* SOCIALS*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+#socials{
+ margin-top:80px;
+  font-family: 'Poppins', sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  justify-content:flex-end;
+
+
 
 }
-form .container{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 100px;
 
+
+#socials h3{
+padding:10px;
+width:100%;
+display:flex;
+justify-content:flex-end;
+ margin-bottom:30px;
+ text-transform:uppercase;
+ font-family:"Oswald";
+ font-weight:600;
+ height:60px;
+
+border-right: 8px solid rgb(225,169,48);
+border-radius:2px;
+background-color:#eff6e0;
 }
 
-form .container:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	filter: blur(50px);
-	z-index: -1;
-}
-.contact-box{
-	max-width: 850px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-}
+.btn-container {
+background-image: -webkit-linear-gradient(30deg, rgb(255,208,1) 50%, rgb(0,160,227) 50%);
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: flex-end;
+     width:100%;
+     padding:10px 0px 10px 0px;
 
-.left{
-
-	padding: 25px 40px;
-}
-
-.right{
-	padding: 25px 40px;
-}
-
-h2{
-	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
-}
+ }
 
 
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: yellow;
-}
-
-.field{
-	width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
-}
-
-.field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
-}
-
-textarea{
-	min-height: 150px;
-}
-
-.btn{
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
-	color: #fff;
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
-}
-
-.btn:hover{
-   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
+ .btn-i {
+     min-width: 300px;
+     background-color: #fff;
+     padding: 1em 2rem;
+     font-family: sans-serif;
+     font-weight: 600;
+     text-decoration: none;
+     border-radius: 5px;
+     color: #c71e7e;
+     display: flex;
+     margin-right: 10px;
+     transition: all 0.2s ease-in-out;
+     align-items:center;
+     justify-content:center;
+ }
+ .btn-i i {
+     color: #df3796;
+     font-size: 20px;
+     padding-right: 10px;
+     transition: all 0.3s ease-in-out;
+ }
+ .btn-i span {
+     font-family: sans-serif;
+     align-self: center;
+     transform: translateX(0px);
+     transition: all 0.1s ease-in-out;
+     opacity: 1;
+ }
+ .btn-i:hover {
+     transform: scale(1.1);
+     background: linear-gradient(to right, #ff3019 0%, #c90477 100%);
+     box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+ }
+ .btn-i:hover i {
+     transform: translateX(45px);
+     padding-right: 0;
+     color: #fff;
+ }
+ .btn-i:hover span {
+     transform: translateX(30px);
+     opacity: 0;
+ }
+ .btn-f {
+    min-width: 300px;
     background-color: #fff;
+    padding: 1em 2rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius:5px;
+    color: #286ed6;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: 10px;
+    margin-top:20px;
+    transition: all 0.2s ease-in-out;
+}
+.btn-f i {
+    color: #286ed6;
+    font-size: 20px;
+    padding-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-f span {
+    font-family: sans-serif;
+    align-self: center;
+    transform: translateX(0px);
+    transition: all 0.1s ease-in-out;
+    opacity: 1;
+}
+.btn-f:hover {
+    transform: scale(1.1);
+    background: #286ed6;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+}
+.btn-f:hover i {
+    transform: translateX(45px);
+    padding-right: 0;
+    color: #fff;
+}
+.btn-f:hover span {
+    transform: translateX(30px);
+    opacity: 0;
 }
 
-@media screen and (max-width: 880px){
-	.contact-box{
-		grid-template-columns: 1fr;
-	}
+
+
+/* SOCIALS END*/
+
+
+
+
+
+/* CARDS */
+#cards{
+margin-top:150px;
+width:70%;
+
 
 }
+#cards h3{
+width:100%;
+padding:10px;
+background-color:#eff6e0;
+ text-transform:uppercase;
+ font-family:"Oswald";
+ font-weight:600;
+ height:60px;
+border-left: 8px solid rgb(225,169,48);
+border-radius:2px;
+
+
+}
+
+.user-pic {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 20px auto 20px;
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+    border-top: 3px solid rgb(0,0,24);
+    border-bottom: 3px solid rgb(0,0,24);
+    transform: rotate(-20deg);
+    transition: 0.5s;
+}
+
+
+
+
+.card-box:hover .user-pic {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+}
+.card-box {
+    padding: 15px;
+    background-color: #fdfdfd;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    box-shadow: 0px 0px 8px 0px #d4d4d4;
+    transition: 0.5s;
+    font-family:"Oswald", sans-serif;
+
+
+
+}
+.card-box:hover {
+	border: 2px solid rgb(0,0,24);
+}
+.card-box a {
+    color: black;
+}
+.card-box span{
+margin-left:10px;
+}
+
+/* CARDS end*/
+
+
+/* FOOTER  */
+#footer {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/static/img/footerbackground.png); background-repeat: no-repeat; background-size: cover;
+    overflow: hidden;
+
+}
+
+#footer .container{
+padding:15px 0 0 0;
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 2px;
+  font-family:"Oswald";
+
+}
+
+.first h4 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .first h4::after {
+        content: '';
+        background: #FFD700;
+        width: 25%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+.first li {
+    list-style: none;
+    padding-bottom: 10px; /* change space between links*/
+
+}
+
+.first a, .first2 a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+
+}
+
+    .first a:hover, .first2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+    }
+.second{
+
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+}
+.socials{
+
+display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:space-evenly;
+height:30%;
+width:30%;
+}
+
+.socials a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+   .socials a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+
+    .third h4 {
+
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+        text-align:right;
+    }
+
+
+        .third h4::after {
+            content: '';
+            background: #FFD700;
+            width: 25%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            right:0%;
+        }
+
+.third a{
+margin-left:15px;
+text-decoration:none;
+color:#CBCBCB;
+}
+
+    .third li {
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+        list-style: none;
+        padding-bottom: 25px;
+        font-size: 16px;
+        font-family:"Oswald";
+        color: rgb(206, 206, 206);
+        letter-spacing: 0px;
+        text-align:right;
+    }
+
+
+    .third li:hover {
+        text-decoration: none;
+        transition: 0.2s;
+    }
+/* FOOTER END */
+
+
+
+/* mobile NAVBAR  */
+@media screen and (min-width:320px) and (max-width:640px) {
+    /*mobile NAVBAR and header*/
+    #firstnav{
+        font-size:15px; /*nav size*/
+  }
+    .dropdown .dropdown-menu{
+    background-color: transparent;
+    border-style:none;
+
+}
+
+
+#dmtekst{
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  #brand{
+  width:70px;
+  height:auto;
+  }
+  header{
+  height:auto;
+  }
+  /* mobile NAVBAR end */
+  /* mobile poslanstvo */
+ #about
+{display:flex;
+flex-direction:column;
+
+}
+#quotes{
+display:flex;
+flex-direction:column;
+gap:1px;
+
+}
+
+ #quotes hr{
+border:         none;
+    border-left:    1px solid black;
+    height:         1px;
+    width:          auto;
+ }
+ /* mobile poslanstvo END */
+
+
+ /* mobile FOOTER */
+.first h4, .third h4{
+font-size:16px;
+}
+.second{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100%;
+}
+.img-responsive{
+width:80px;
+display:block;
+height:auto;
+}
+.third{
+display:flex;
+flex-direction:column;
+justify-content:start;
+align-items:flex-end;
+width:100%;
+height:auto;
+}
+
+.first li a{
+font-size:15px;
+}
+
+.third li{
+font-size:15px;
+}
+/* mobile FOOTER END*/
+
+/* mobile CARDS*/
+.user-pic {
+    width: 150px;
+    height: 150px;
+}
+
+}
+/* mobile CARDS*/
+
+@media screen and (min-width:640px) and (max-width:768px){
+        /*mobile NAVBAR and header*/
+    #firstnav{
+        font-size:15px; /*nav size*/
+  }
+    .dropdown .dropdown-menu{
+    background-color: transparent;
+    border-style:none;
+
+}
+
+
+#dmtekst{
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  #brand{
+  width:70px;
+  height:auto;
+  }
+  header{
+  height:auto;
+  }
+  /* mobile NAVBAR end */
+  /* mobile poslanstvo */
+ #about
+{display:flex;
+flex-direction:column;
+
+}
+#quotes{
+display:flex;
+flex-direction:column;
+gap:1px;
+
+}
+
+ #quotes hr{
+border:         none;
+    border-left:    1px solid black;
+    height:         1px;
+    width:          auto;
+ }
+ /* mobile poslanstvo END */
+
+
+ /* mobile FOOTER */
+.first h4, .third h4{
+font-size:16px;
+}
+.second{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100%;
+}
+.img-responsive{
+width:80px;
+display:block;
+height:auto;
+}
+.third{
+display:flex;
+flex-direction:column;
+justify-content:start;
+align-items:flex-end;
+width:100%;
+height:auto;
+}
+
+.first li a{
+font-size:15px;
+}
+
+.third li{
+font-size:15px;
+}
+/* mobile FOOTER END*/
+
+/* mobile CARDS*/
+.user-pic {
+    width: 150px;
+    height: 150px;
+}
+
+}
+/* mobile CARDS*/
+
+
