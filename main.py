@@ -35,7 +35,7 @@ def senior_team():
 
 @app.route("/Young")
 def young_team():
-    return render_template("Young.html")
+    return render_template("news.html")
 
 @app.route("/youngster")
 def youngster():
