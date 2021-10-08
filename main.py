@@ -41,9 +41,9 @@ def young_team():
 def youngster():
     return render_template("youngster.html")
 
-@app.route("/news")
+@app.route("/newster")
 def news():
-    return render_template("news.html")
+    return render_template("newster.html")
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
