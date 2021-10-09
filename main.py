@@ -33,16 +33,16 @@ def about_us():
 def senior_team():
     return render_template("Senior.html")
 
-@app.route("/Young")
+@app.route("/news")
 def young_team():
-    return render_template("Young.html")
+    return render_template("news.html")
 
 @app.route("/youngster")
 def youngster():
     return render_template("youngster.html")
 
 @app.route("/newster")
-def news():
+def newster():
     return render_template("newster.html")
 
 @app.route('/contact', methods=['GET', 'POST'])
