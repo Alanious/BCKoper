@@ -10,12 +10,12 @@ app.secret_key = 'development key'
 
 app.config.update(dict(
     DEBUG = True,
-    MAIL_SERVER = 'mail.sarafina.eu',
+    MAIL_SERVER = 'mail.bckoper.si',
     MAIL_PORT = 587,
     MAIL_USE_TLS = True,
     MAIL_USE_SSL = False,
-    MAIL_USERNAME = 'shop@sarafina.eu',
-    MAIL_PASSWORD = 'K0per2021!',
+    MAIL_USERNAME = 'info@bckoper.si',
+    MAIL_PASSWORD = 'infoBCKoper2021',
 ))
 
 mail.init_app(app)

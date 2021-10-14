@@ -404,7 +404,7 @@ section{
     justify-content: center;
     align-items: center;
     background-color:rgb(233,166,44);
-    background-image: -webkit-linear-gradient(160deg, rgba(0,160,227,0.8) 76%, rgba(255,208,1,0.8)50%);
+    background-image: -webkit-linear-gradient(160deg, rgba(0,160,227,0.8) 78%, rgba(255,208,1,0.8)50%);
     flex-wrap: wrap;
     height:auto;
 }

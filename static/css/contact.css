@@ -1,7 +1,16 @@
+.bkg img{
+position: fixed;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+filter: brightness(50%);
+}
+
 .login {
     width: 600px;
     height: auto;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 32px 0 rgba(3, 10, 117, 0.37);
     backdrop-filter: blur(0.3px);
     -webkit-backdrop-filter: blur(0.3px);
@@ -14,7 +23,7 @@
     font-family: "Oswald";
 }
 
-img {
+.login img {
     width: 200px;
     position: relative;
     top: -130px;
@@ -25,7 +34,7 @@ img {
 h2 {
     text-align: center;
     text-transform: uppercase;
-    color: rgb(15, 85, 126);
+    color: white;
     margin-top: -180px;
     margin-bottom: 40px;
     font-size: 35px;
@@ -34,7 +43,7 @@ h2 {
 
 .labels {
     display: block;
-    color: rgb(15, 85, 126);
+    color: white;
     margin-top: 10px;
     font-size: 25px;
 }
