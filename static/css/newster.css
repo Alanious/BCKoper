@@ -3,13 +3,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
 
 .sign{
 margin-top: 20px;
 text-align: center;
 margin-bottom: 30px;
-font-family: 'Brush Script MT', cursive;
-font-size: 90px;
+
+font-family: 'Playfair Display SC', serif, italic;
+
+
+font-size: 60px;
 color: white;
 }
 
