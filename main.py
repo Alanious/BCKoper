@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, flash
 from forms import ContactForm
 from flask_mail import Message, Mail
 
+
 mail = Mail()
 
 app = Flask(__name__)
@@ -10,12 +11,12 @@ app.secret_key = 'development key'
 
 app.config.update(dict(
     DEBUG = True,
-    MAIL_SERVER = 'mail.bckoper.si',
+    MAIL_SERVER = 'smtp.gmail.com',
     MAIL_PORT = 587,
     MAIL_USE_TLS = True,
     MAIL_USE_SSL = False,
-    MAIL_USERNAME = 'info@bckoper.si',
-    MAIL_PASSWORD = 'infoBCKoper2021',
+    MAIL_USERNAME = 'alan.hazdovac@gmail.com',
+    MAIL_PASSWORD = 'Magdelo1@',
 ))
 
 mail.init_app(app)
@@ -54,7 +55,7 @@ def contact():
       flash('Vsa polja je potrebno izpolniti.')
       return render_template('contact.html', form=form)
     else:
-      msg = Message(form.subject.data, sender='bck.novi.clani@gmail.com', recipients=['shop@sarafina.eu'])
+      msg = Message(form.subject.data, sender='alan.hazdovac@gmail.com', recipients=['alan.hazdovac@gmail.com'])
       msg.body = """
       Ime otroka: %s (%s)
       Šola, ki jo obiskuje: %s

@@ -7,6 +7,12 @@ min-height: 100%;
 filter: brightness(50%);
 }
 
+.success{
+color: white;
+}
+
+
+
 .login {
     width: 600px;
     height: auto;
