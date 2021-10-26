@@ -11,12 +11,12 @@ app.secret_key = 'development key'
 
 app.config.update(dict(
     DEBUG = True,
-    MAIL_SERVER = 'smtp.gmail.com',
+    MAIL_SERVER = '185.29.16.60',
     MAIL_PORT = 587,
     MAIL_USE_TLS = True,
     MAIL_USE_SSL = False,
-    MAIL_USERNAME = 'alan.hazdovac@gmail.com',
-    MAIL_PASSWORD = 'Magdelo1@',
+    MAIL_USERNAME = 'info@bckoper.si',
+    MAIL_PASSWORD = 'InfoBCKoper2021',
 ))
 
 mail.init_app(app)
@@ -55,7 +55,7 @@ def contact():
       flash('Vsa polja je potrebno izpolniti.')
       return render_template('contact.html', form=form)
     else:
-      msg = Message(form.subject.data, sender='alan.hazdovac@gmail.com', recipients=['alan.hazdovac@gmail.com'])
+      msg = Message(form.subject.data, sender='bck.novi.clani@gmail.com', recipients=['info@bckoper.si'])
       msg.body = """
       Ime otroka: %s (%s)
       Šola, ki jo obiskuje: %s
